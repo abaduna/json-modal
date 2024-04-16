@@ -11,7 +11,7 @@ function ModalHome({ title, price, itemid, setCarrito,id }: Menu) {
   const [select, setSelect] = useState<string>("");
   const [extTitle, setExtTitle] = useState<string>("");
   const { getData } = useFetch();
-  const projectWithId1 = projects.find((project) => project.itemid === +id);
+  const projectWithId1 = projects.find((project) => project.itemid === (id ? +id : ""));
 
   useEffect(() => {
     const getDataExtra = async () => {

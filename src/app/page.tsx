@@ -14,7 +14,7 @@ import { projects } from "./../config/menu.json";
 import { hambuergessas } from "../config/hambuergessas.json";
 import { botellas } from "../config/botellas.json";
 export interface Menu {
-  select: any;
+  select?: unknown;
   title: string;
   price: number;
   url_imagen?: string;
